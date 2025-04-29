@@ -1,0 +1,157 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  margin: 100;
+  padding: 5;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #3a3a3a 25%, #1a1a1a 75%);
+  position: relative;
+}
+
+.hero-title {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 100;
+  width: 100%;
+  background: #121212;
+  color: white;
+  padding: 10px 20px; /* Ajuste en padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00c0ff;
+}
+
+.projects {
+  padding: 100px 20px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #2a2a2a;
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 192, 255, 0.4);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.contact {
+  padding: 80px 20px;
+  background: #121212;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00c0ff;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-link {
+  color: #00c0ff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+
+.footer {
+  padding: 20px 0;
+  background: #121212;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
